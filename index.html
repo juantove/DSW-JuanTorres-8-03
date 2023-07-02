@@ -1,32 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fase 2</title>
     <style>
-        *{
+        body {
             text-align: center;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-around;
+            /* align-content: end; */
             background-color: blueviolet;
-            color: white;
         }
     </style>
 </head>
+
 <body>
-    <h1>Bienvenido a mi sitio Web</h1>
-    <h2>Proyecto de sitio Web 2023 - 8-03</h2>
-    <hr>
-    <h3>Nombre: Juan Torres</h3>
-    <h3>Programa: Ingenieria de Sistemas</h3>
-    <h3>Fecha de creación: 15-Junio-2023</h3>
-    <hr>
+    <header>
+        <h1>Box model</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#boxmodel"></a>Box model</li>
+                <li><a href="#mockup"></a>Mockup</li>
+                <li><a href="#Acercade"></a>A cerca de </li>
+            </ul>
+        </nav>
+    </header>
 
-    <p>Mis datos de contacto son <br>
-    Skype:live:juan_ttorres_1 <br>
-    Telefono: 3009621882 <br>
-    Email: jtorresvel@unadvirtual.edu.co <br> 
-    
-    </p>
+    <!-- SECCIÓN DE INICIO -->
+    <section id="inicio">
+        <h2>¿Que debo saber sobres box model?</h2>
+        <p>
+            El modelo de caja (box model) es un concepto fundamental en el diseño web que describe cómo se estructura y
+            dimensiona un elemento HTML en una página. Cada elemento HTML, como un párrafo, una imagen o un div, se
+            considera una caja rectangular, y el modelo de caja describe cómo se calculan sus dimensiones y cómo
+            interactúan con otros elementos.
+        </p>
 
+        <img src="img/boxmodel.png" alt="Descripción de box model">
+    </section>
+    <hr>
+    <!-- SECCIÓN DE INFORMACIÓN -->
+    <section id="boxmodel">
+        <h1>El modelo de caja se compone de cuatro elementos principales:</h1>
+
+
+
+        <p>
+            Contenido (Content): Es el área que contiene el contenido real, como texto, imágenes o elementos anidados.
+            Es el área visible dentro de la caja.
+
+            Relleno (Padding): Es un espacio opcional y transparente que rodea el contenido. Se utiliza para crear
+            espacio adicional entre el contenido y los bordes de la caja.
+
+            Borde (Border): Es una línea que rodea el contenido y el relleno. Puede tener un color, grosor y estilo
+            definidos, como sólido, punteado o en relieve.
+
+            Margen (Margin): Es un espacio transparente que se encuentra fuera del borde. El margen se utiliza para
+            crear espacio entre la caja actual y otros elementos en la página.
+
+            En conjunto, el contenido, el relleno, el borde y el margen definen el tamaño total de una caja en una
+            página web.
+
+            Es importante comprender el modelo de caja porque afecta el diseño y el posicionamiento de los elementos en
+            una página. Al agregar relleno, bordes o márgenes a una caja, su tamaño total aumentará y afectará cómo se
+            posiciona y se relaciona con otros elementos.
+
+            Además, en CSS (Cascading Style Sheets), se pueden aplicar propiedades específicas para controlar cada uno
+            de estos componentes del modelo de caja, como width (ancho), height (altura), padding (relleno), border
+            (borde) y margin (margen). Estas propiedades permiten ajustar la apariencia y el diseño de las cajas en una
+            página web.
+        </p>
+    </section>
+    <hr>
+    <!-- SECCIÓN DE MOCKUP -->
+    <section id="mockup">
+        <h3>Mockup de la página</h3>
+        <img src="img/mockup.png" alt="">
+    </section>
+    <hr>
+    <!-- SECCIÓN A CERCA DE -->
+    <a name="Acercade"></a>
+    <section>
+        <h3>Acerca de</h3>
+    </section>
+
+    <footer>
+        <p>
+            Mis datos de contacto son <br>
+            Skype:live:juan_ttorres_1 <br>
+            Telefono: 3009621882 <br>
+            Email: jtorresvel@unadvirtual.edu.co <br>
+        </p>
+        <p>Fecha de actualización</p>
+    </footer>
 </body>
+
 </html>
