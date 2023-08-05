@@ -1,0 +1,21 @@
+*{
+    background-color:white;
+}
+
+
+h1 {
+    background-color: aquamarine;
+    color: red;
+}
+
+p{
+    color: black;
+}
+
+#tres {
+color: blue;
+}
+
+.centrado {
+    text-align: center;
+}
