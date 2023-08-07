@@ -1,63 +1,61 @@
-
-
-
 /*h1{
     background-color: rgb(17, 197, 95);
 }
 */
-.contenedor{
+.contenedor {
     display: grid;
-    grid-template-areas: 
-    'A A A A'
-    'B B B B'
-    'C D D D'
-    'E E E E';
+    grid-template-areas:
+        'A A A A'
+        'B B B B'
+        'C D D D'
+        'E E E E';
 }
 
 /*.centradito {
     text-align: center;
 }
 */
-header{
+header {
     grid-area: A;
-    background-color:gold;
+    background-color: #84c359;
 }
 
-nav{
+nav {
     grid-area: B;
     background-color: aqua;
 }
 
-main{
+main {
     grid-area: D;
     color: rgb(103, 74, 231);
 }
 
 aside {
     grid-area: C;
-    background-color: red;
+    background-color: turquoise;
 }
 
 footer {
     grid-area: E;
-    background-color: blue;
+    background-color: #f2f2f2;
+   
 }
 
-.centrado{
+.centrado {
     text-align: center;
 }
 
 /*MENU*/
 
-.menuh{
+.menuh {
     display: flex;
     flex-direction: row;
     justify-content: center;
     list-style: none;
-    
+
 }
 
-.menuh a{
+.menuh a {
     background-color: black;
     color: white;
     text-decoration: none;
@@ -66,14 +64,14 @@ footer {
 }
 
 
-.menu-aside{
+.menu-aside {
     list-style: none;
     padding: 4px;
 
 }
 
 
-.menu-aside a{
+.menu-aside a {
     background-color: blue;
     color: white;
     text-decoration: none;
@@ -84,18 +82,18 @@ footer {
 
 @media (max-width: 500px) {
 
-    .contenedor{
+    .contenedor {
         display: grid;
-        grid-template-areas: 
-        'A A A A'
-        'B B B B'
-        'D D D D'
-        '. C C .'
-        'E E E E';
+        grid-template-areas:
+            'A A A A'
+            'B B B B'
+            'D D D D'
+            '. C C .'
+            'E E E E';
     }
 
-    footer{
+    footer {
         background-color: red;
     }
-    
+
 }
